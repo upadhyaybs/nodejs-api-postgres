@@ -8,7 +8,7 @@ const routes=require('./api/routes/index');
 const logger=pino({level:process.env.LOG_LEVEL|| 'info'});
 const expressLogger=expressPino({logger});
 
-const port=process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 var app=express();
 
 app.use(bodyParser.json());
@@ -43,6 +43,6 @@ app.use(function(err,request,respone,next){
     });
 });
 
-app.listen(port,() => { 
-    console.log('nodejs-rest-api-demo server started on : '+port);
+app.listen(PORT,() => { 
+    console.log('nodejs-rest-api-demo server started on : '+ PORT);
 })
