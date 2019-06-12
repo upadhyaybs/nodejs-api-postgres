@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-rest-api",
+  "version": "1.0.0",
+  "description": "Nodejs rest api demo application ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \" Error:no test specified \" && exit 1 ",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "Restful",
+    "Nodejs",
+    "API",
+    "heroku"
+  ],
+  "author": "B Shankar Upadhyay",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.0"
+  },
+  "dependencies": {
+    "express": "^4.17.0",
+    "express-pino-logger": "^4.0.0",
+    "morgan": "^1.9.1",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.2",
+    "pino": "^5.12.5"
+  },
+  "engines": {
+    "node":"10.15.3"
+  }
+}
