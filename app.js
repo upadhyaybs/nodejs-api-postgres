@@ -33,7 +33,7 @@ if (app.get('env')=='development'){
     });
 }
 
-//Production error handler
+//Production error handlero
 //No stacktrace
 app.use(function(err,request,respone,next){
     res.status(err.code||500)
